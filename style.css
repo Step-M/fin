@@ -923,6 +923,9 @@ p.adress, .tel-foo {
 .slick-slide>div:nth-child(2) div {
   transform: translateX(10%);
 }
+.slider-img-w {
+  max-width: 200px;
+}
 .img-w {
   width: 154px;
   height: 107px;
@@ -1038,6 +1041,9 @@ p.adress, .tel-foo {
   cursor: pointer;
 }
 .burger {
+  display: none;
+}
+.mobile_data_w{
   display: none;
 }
 /*******************************      MEDIA       ***********************/
@@ -1243,6 +1249,7 @@ footer {
 .foo-title {
   margin-top: 30px;
 }
+.mobile_data_w{display: block;}
 }
 
 /*******************************      SM       ***********************/
