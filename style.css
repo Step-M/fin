@@ -1313,6 +1313,7 @@ img.logo-bgs {
 .sect-bg-about .section_header.section-title.section-title_left {
   position: absolute;
   top: 130px;
+  width: 100%;
 }
 .section-8-container{
   background: none;
