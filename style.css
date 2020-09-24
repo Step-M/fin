@@ -728,6 +728,7 @@ position: relative;
 .section-9-container{
   max-width: 825px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .section-10-container .panel-group .panel+.panel{
   margin-top: 30px;
@@ -1636,6 +1637,7 @@ p.pretitle-form {
 }
 .section-9-container{
   max-width: 100%;
+  padding: 0 15px;
 }
 }
 
