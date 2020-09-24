@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;0,800;0,900;1,300;1,400&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
 		rel="stylesheet">
+
 	<link href="lib/plugins/fulpagescroll/jquery.fullpage.css" rel="stylesheet">
 	<link rel="stylesheet" href="lib/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="lib/plugins/slick/slick.css">
@@ -29,7 +29,8 @@
 								<div class="header-contact">
 									<a href="tel:88124244647">8 <span>(812)</span> 424 46 47</a>
 									<a href="mailto:"><span>info</span>@gostonomica.ru</a>
-									<button class="primer-btn">Регистрация</button>
+									<button class="primer-btn" data-toggle="modal"
+										data-target="#regModal">Регистрация</button>
 								</div>
 								<div class="burger">
 									<span></span>
@@ -77,8 +78,10 @@
 								</div>
 							</div>
 							<div class="btn-s1_w">
-								<button class="primer-btn">Регистрация</button>
-								<button class="secondary-btn">Подробнее</button>
+								<button class="primer-btn" data-toggle="modal"
+									data-target="#regModal">Регистрация</button>
+								<button class="secondary-btn" data-toggle="modal"
+									data-target="#moreModal">Подробнее</button>
 							</div>
 						</div>
 					</div>
@@ -231,10 +234,10 @@
 				</div>
 			</div>
 			<div class="container section-4-container">
-	             <div class="mobile_data_w">
-					<div class="data-btn active">22.03.21</div>
-					<div class="data_btn-2">23.03.21</div>
-				 </div>
+				<div class="mobile_data_w">
+					<button id="data_1" class="data-btn active">22.03.21</button>
+					<button id="data_2" class="data-btn">23.03.21</button>
+				</div>
 				<div class="row eqw-height">
 					<div class="col-xs-12 col-md-4 col-lg-3 prog_col">
 						<div class="program_box">
@@ -539,11 +542,13 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="se-more">Cмотреть  всю программу дня </div>
+						<div class="se-more">Cмотреть всю программу дня <div class="arrow">➜</div>
+						</div>
 						<p class="prog-text-utp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 							Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-						<button class="primer-btn progg-btn">Регистрация</button>
+						<button class="primer-btn progg-btn" data-toggle="modal"
+							data-target="#regModal">Регистрация</button>
 					</div>
 				</div>
 			</div>
@@ -741,20 +746,6 @@
 									очень длинной, просьба это учесть)</div>
 							</div>
 						</div>
-
-					</div>
-					<div class="col-xs-12 col-md-6 col-lg-3 spiker_col">
-						<div class="spiker_box_w">
-							<div class="spiker_shape"></div>
-							<div class="spiker_box">
-								<div class="spiker_photo">
-									<img src="img/ivan.png" alt="shoto">
-								</div>
-								<div class="spiker-name">Иван Иванов</div>
-								<div class="spiker_position">должность</div>
-							</div>
-						</div>
-
 					</div>
 					<div class="col-xs-12 col-md-6 col-lg-3 spiker_col">
 						<div class="spiker_box_w">
@@ -821,7 +812,8 @@
 											отраслей, и презентация практических кейсов, готовых решений для повышения
 											конкурентоспособности отечественных промышленных предприятий в современных
 											условиях рынка.</p>
-										<button class="primer-btn about-btn">Регистрация</button>
+										<button class="primer-btn about-btn" data-toggle="modal"
+											data-target="#regModal">Регистрация</button>
 									</div>
 								</div>
 							</div>
@@ -834,542 +826,542 @@
 			<div class="container no-padding">
 				<div class="line-h  line-right"></div>
 			</div>
-				<div class="section_header section-title">
+			<div class="section_header section-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 header">
+							<h2 class="h2_title">Предыдущие конференции</h2>
+						</div>
+					</div>
+				</div>
+				<div class="line-w"></div>
+			</div>
+			<div class=" section-6-container">
+				<div class="conf-photos_1">
 					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 header">
-								<h2 class="h2_title">Предыдущие конференции</h2>
+						<div class="year_letters">2020</div>
+					</div>
+					<div class="slick-wrapper">
+						<div class="slider-pic">
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
+								</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="line-w"></div>
 				</div>
-				<div class=" section-6-container">
-					<div class="conf-photos_1">
-						<div class="container">
-							<div class="year_letters">2020</div>
-						</div>
-						<div class="slick-wrapper">
-							<div class="slider-pic">
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 
-					<div class="conf-photos_2">
-						<div class="container">
-							<div class="year_letters">2019</div>
-						</div>
-						<div class="slick-wrapper">
-							<div class="slider-pic">
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+				<div class="conf-photos_2">
+					<div class="container">
+						<div class="year_letters">2019</div>
+					</div>
+					<div class="slick-wrapper">
+						<div class="slider-pic">
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick.png" data-lightbox="2020-phpto"> <img src="img/slick.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick2.png" data-lightbox="2020-phpto"> <img src="img/slick2.png"
+											alt="slider-item"></a>
 								</div>
-								<div class="slide-item">
-									<div class="slider-img-w">
-										<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
-												alt="slider-item"></a>
-									</div>
+							</div>
+							<div class="slide-item">
+								<div class="slider-img-w">
+									<a href="img/slick3.png" data-lightbox="2020-phpto"> <img src="img/slick3.png"
+											alt="slider-item"></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			
+			</div>
+
 		</section>
 		<section class="vertical-scrolling">
 			<div class="container  four-lines">
@@ -1408,7 +1400,8 @@
 								<div class="partner-text">(12.03.2020 – ФГУП “Стандартинформ”) 4 марта на территории
 									Конгресс-холла «Сколково» состоялась международная конференция по стандартизации —
 									NFST-2020 (National forum of standards and technology-2020). [...]</div>
-								<div class="partner-more">Подробнее >>></div>
+								<div class="partner-more" data-toggle="modal" data-target="#moreModal">Подробнее >>>
+								</div>
 							</div>
 						</div>
 
@@ -1426,7 +1419,8 @@
 									стандартизации – NFST-2020. Будут разобраны идеи использования цифровых технологий в
 									стандартизации [...]
 								</div>
-								<div class="partner-more">Подробнее >>></div>
+								<div class="partner-more" data-toggle="modal" data-target="#moreModal">Подробнее >>>
+								</div>
 							</div>
 						</div>
 
@@ -1443,7 +1437,8 @@
 								<div class="partner-text">(22.01.2020 – Журнал «Стандарты и качество») Международная
 									конференция «Цифровые стандарты» 4 марта 2020 года состоится международная
 									конференция по стандартизации — NFST-2020. [...]</div>
-								<div class="partner-more">Подробнее >>></div>
+								<div class="partner-more" data-toggle="modal" data-target="#moreModal">Подробнее >>>
+								</div>
 							</div>
 						</div>
 
@@ -1461,7 +1456,8 @@
 									Петербурге. На площадке Санкт-Петербургской торгово-промышленной палаты обсуждали
 									требования к стандартам и методы их цифровизации. — открыл форум генеральный
 									директор АНО «Гостономика» Виталий Щукин [...]</div>
-								<div class="partner-more">Подробнее >>></div>
+								<div class="partner-more" data-toggle="modal" data-target="#moreModal">Подробнее >>>
+								</div>
 							</div>
 						</div>
 
@@ -1477,7 +1473,8 @@
 								<div class="partner-text">(23.05.2019 – СПБ торгово-промышленная палата) 22 мая в стенах
 									Санкт-Петербургской торгово-промышленной палаты прошел Международный форум –
 									Стандартизация 2019 (NFST). </div>
-								<div class="partner-more">Подробнее >>></div>
+								<div class="partner-more" data-toggle="modal" data-target="#moreModal">Подробнее >>>
+								</div>
 							</div>
 						</div>
 
@@ -1494,7 +1491,8 @@
 								<div class="partner-text">(22.05.2019 – Росстандарт) 22 мая 2019 года представители ФГУП
 									«Стандартинформ»: директор Департамента распространения Е.К. Кузина приняла участие
 									в ежегодном форуме NFST в Санкт-Петербурге.</div>
-								<div class="partner-more">Подробнее >>></div>
+								<div class="partner-more" data-toggle="modal" data-target="#moreModal">Подробнее >>>
+								</div>
 							</div>
 						</div>
 
@@ -1544,7 +1542,8 @@
 								<li>+ Перевод на русский язык</li>
 								<li>+ Записи прошедших модулей в личном кабинете.</li>
 							</ul>
-							<button class="primer-btn price-btn">Регистрация</button>
+							<button class="primer-btn price-btn" data-toggle="modal"
+								data-target="#regModal">Регистрация</button>
 						</div>
 					</div>
 				</div>
@@ -1606,7 +1605,8 @@
 						<p class="prog-text-utp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
 							Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-						<button class="primer-btn progg-btn">Регистрация</button>
+						<button class="primer-btn progg-btn" data-toggle="modal"
+							data-target="#regModal">Регистрация</button>
 					</div>
 				</div>
 			</div>
@@ -1935,24 +1935,100 @@
 	</ul>
 
 	<div class="menu-w d-none">
-        <div class="mob-menu">
+		<div class="mob-menu">
 			<div class="tag-remove"></div>
 			<img src="img/logo-footer.png" alt="">
-				<ul>
-					<li><a href="#">Программа</a></li>
-					<li><a href="#">Спикеры</a></li>
-					<li><a href="#">О конференции</a></li>
-					<li><a href="#">Галерея</a></li>
-					<li><a href="#">Парнеры о нас</a></li>
-					<li><a href="#">Стоимость</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+			<ul>
+				<li><a href="#">Программа</a></li>
+				<li><a href="#">Спикеры</a></li>
+				<li><a href="#">О конференции</a></li>
+				<li><a href="#">Галерея</a></li>
+				<li><a href="#">Парнеры о нас</a></li>
+				<li><a href="#">Стоимость</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
 			<div class="header-contact header-contact2">
 				<a href="tel:88124244647">8 <span>(812)</span> 424 46 47</a>
 				<a href="mailto:"><span>info</span>@gostonomica.ru</a>
 			</div>
 		</div>
 	</div>
+
+	<!-- Modal -->
+	<div id="regModal" class="modal fade registration-modal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Регистрация участия в NFST 2021</h4>
+				</div>
+				<div class="modal-body modal-form-body">
+					<p class="modal-form-pretitle">Заполните пожалуйста все поля формы, чтобы мы смоги сформировать и
+						отправить вам счет на оплату участия в мероприятии</p>
+					<form action="">
+						<label for="org">Полное наименование организации, включая правовую форму*</label>
+						<input id="org" type="text">
+
+						<label for="inn">ИНН<span>*</span></label>
+						<input id="inn" type="text">
+
+						<label for="fio">Ф.И.О<span>*</span></label>
+						<input id="fio" type="text">
+
+						<label for="mail">Ваш e-mail<span>*</span></label>
+						<input id="mail" type="mail">
+
+						<label for="tel">Телефон<span>*</span></label>
+						<input id="tel" type="text">
+
+						<label for="ticet">Количество билетов<span>*</span></label>
+						<input id="ticet" type="number">
+
+						<label for="comment">Комментарий<span>*</span></label>
+						<textarea name="comment" id="comment"></textarea>
+
+						<p class="confi">Нажимая кнопку, Вы принимаете условия <a href="">Политики
+								конфиденциальности</a> персональной информации</p>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="primer-btn" data-dismiss="modal">Отправить</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Modal see more -->
+	<div id="moreModal" class="modal fade registration-modal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Заголовок Заголовок Заголовок</h4>
+				</div>
+				<div class="modal-body modal-form-body">
+					<p class="modal-form-pretitle">Заголовок Заголовок Заголовок</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+						maecenas accumsan lacus vel facilisis. </p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+						maecenas accumsan lacus vel facilisis. </p>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+
+		</div>
+	</div>
+
+
+
 	<script src="lib/plugins/jQuery/jQuery-3.1.1.js"></script>
 	<script src="lib/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<script src="lib/plugins/fulpagescroll/scrolloverflow.min.js"></script>
@@ -1961,96 +2037,218 @@
 	<script src="lib/plugins/lightbox/lightbox.js"></script>
 	<script>
 
-$(document).ready(function () {
-	lightbox.option({
-		'resizeDuration': 200,
-		'wrapAround': true
-	});
-	if ($('.slider-pic').length > 0) {
-		$('.slider-pic').slick({
-			rows: 2,
-			dots: false,
-			arrows: true,
-			infinite: true,
-			speed: 300,
-			slidesToShow: 8,
-			slidesToScroll: 6,
-			nextArrow: '<div> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 59.414 59.414" style="enable-background:new 0 0 59.414 59.414;" xml:space="preserve"><polygon points="15.561,0 14.146,1.414 42.439,29.707 14.146,58 15.561,59.414 45.268,29.707 "/></svg></div>',
-			prevArrow: ' '
-		});
-	}
+		$(document).ready(function () {
+			lightbox.option({
+				'resizeDuration': 200,
+				'wrapAround': true
+			});
+
+			$('.slider-pic').slick({
+				rows: 2,
+				dots: false,
+				arrows: true,
+				infinite: true,
+				speed: 300,
+				slidesToShow: 8,
+				slidesToScroll: 6,
+				nextArrow: '<div> <div class="arrow-next">➜</div><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 59.414 59.414" style="enable-background:new 0 0 59.414 59.414;" xml:space="preserve"><polygon points="15.561,0 14.146,1.414 42.439,29.707 14.146,58 15.561,59.414 45.268,29.707 "/></svg></div>',
+				prevArrow: '<div class="arrow-prew">➜</div>',
+				responsive: [
+					{
+						breakpoint: 993,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							rows: 1
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							dots: true,
+							arrows: true,
+							rows: 1
+						}
+					}
+				]
+			});
 
 
+			function createFullpage() {
+				$('#fullpage').fullpage({
+					sectionSelector: '.vertical-scrolling',
+					//	slideSelector: '.horizontal-scrolling',
+					controlArrows: false,
+					navigation: false,
+					responsiveWidth: 992,
+					parallax: true,
+					menu: '#navigation',
+					anchors: ['firstPage', 'secondPage', '3secondPage', '4secondPage', '5secondPage', '6secondPage', '7secondPage', '8secondPage', '9secondPage', '10secondPage', '11secondPage', '12secondPage', '13secondPage'],
+					slidesNavigation: true,
+					scrollOverflow: true,
+					scrollOverflowReset: true,
+					scrollOverflowResetKey: 'YWx2YXJvdHJpZ28uY29tXzlRaGMyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT14Ykk=',
+					onLeave: function (direction) {
 
-function createFullpage() {
-	$('#fullpage').fullpage({
-		sectionSelector: '.vertical-scrolling',
-		//	slideSelector: '.horizontal-scrolling',
-		controlArrows: false,
-		navigation: false,
-		responsiveWidth: 1200,
-		responsiveHeight: 210,
-		parallax: true,
-		menu: '#navigation',
-		anchors: ['firstPage', 'secondPage', '3secondPage', '4secondPage', '5secondPage', '6secondPage', '7secondPage', '8secondPage', '9secondPage', '10secondPage', '11secondPage', '12secondPage', '13secondPage'],
-		slidesNavigation: true,
-		scrollOverflow: true,
-		scrollOverflowReset: true,
-		scrollOverflowResetKey: 'YWx2YXJvdHJpZ28uY29tXzlRaGMyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT14Ykk=',
-	onLeave: function(direction) {
+						$('.line-w').removeClass('animate-w');
+						$('.line-h').removeClass('animate-h');
+					},
+					afterLoad: function (origin, destination, direction) {
+						$(this).find('.line-w').addClass('animate-w');
+						$(this).find('.line-h').addClass('animate-h');
+					}
+				});
+			}
 
-	$('.line-w').removeClass('animate-w');
-	$('.line-h').removeClass('animate-h');
-},
-/* 
-  onSlideLeave: function(section, origin, destination, direction) {
-	$('.line-w').removeClass('animate-w');
-	alert('onSlideLeave');
-  },
- afterResize: function() {
-    placeHolder.append('<p>afterResize</p>');
-  },
-  */
+			$('.logo-container').click(function () {
+				$('.sliser').addClass('animate_logo');
+				function greet() {
+					$('.sliser').removeClass('animate_logo')
+				}
+				setTimeout(greet, 1000);
+			});
 
-  afterLoad: function(origin, destination, direction) {
-	$(this).find('.line-w').addClass('animate-w');
-	$(this).find('.line-h').addClass('animate-h');
-  }
-});
-}
+			$('.burger').click(function () {
+				$('.menu-w').removeClass('d-none');
+			});
+			$('.tag-remove').click(function () {
+				$('.menu-w').addClass('d-none');
+			});
 
-createFullpage();
+			//mobile filter by data
+			var data1 = $('#data_1');
+			var data2 = $('#data_2');
+			var cards_data1 = [];
+			var cards_data2 = [];
+			var cards_all = [];
 
-$(window).resize(function() {
+			$(".prog_col").each(function () {
+				var card = $(this);
+				cards_all.push(card);
+			});
 
-if ($(window).height() <= 1000) {
-	fullPageCreated = false;
-	$.fn.fullpage.destroy('all');
-}
+			function collectCards(databtn, arreyName) {
+				var btncontent = databtn.html();
 
-if ($(window).height() > 1000) {
-	createFullpage();
-}
+				$(".prog_col").each(function () {
+					var card = $(this);
+					var data = card.find(".data").text();
+					if (data == btncontent) {
+						arreyName.push(card);
+					}
+				});
+				databtn.click(function () {
+					var databtn = $(this).html();
+					$('.eqw-height').html(arreyName);
+					$('.se-more').removeClass('hide');
+					$('.data-btn').removeClass('active');
+					$(this).addClass('active');
+				});
+			}
 
-});
+			$('.se-more').click(function () {
+				$('.eqw-height').html(cards_all);
+				$('.se-more').addClass('hide');
+				$('.data-btn').removeClass('active');
+			});
 
 
-	$('.logo-container').click(function(){
-		$('.sliser').addClass('animate_logo');
-		function greet(){
-			$('.sliser').removeClass('animate_logo')
-		}
-		setTimeout(greet, 1000);
-	});
+	
+			if ($(window).width() > 992 ) {
+				//show on mobile when load
+				createFullpage();
+			}
+			else {
+				//show on mobile when load
+				collectCards(data1, cards_data1);
+				collectCards(data2, cards_data2);
+				$('.eqw-height').html(cards_data1);
+				$('.spikers-w').slick({
+					dots: true,
+					arrows: true,
+					infinite: true,
+					speed: 300,
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					nextArrow: '<div class="arrow-next">➜</div>',
+					prevArrow: '<div class="arrow-prew">➜</div>',
+					responsive: [
+						{
+							breakpoint: 993,
+							settings: {
+								adaptiveHeight: false,
+								slidesToShow: 2,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+			}
 
-	$('.burger').click(function(){
-		$('.menu-w').removeClass('d-none');
-	});
-	$('.tag-remove').click(function(){
-		$('.menu-w').addClass('d-none');
-	});
 
-});
+			$(window).resize(function () {
+
+				if ($(window).width() > 992 && $('.spikers-w').hasClass('slick-initialized') &&  !$('html').hasClass('fp-enabled')) {
+					
+					createFullpage();
+					//show on mobile when resize
+					$('.spikers-w').filter('.slick-initialized').slick('unslick');
+                    $.fn.fullpage.destroy('all');
+						
+						collectCards(data1, cards_data1);
+						collectCards(data2, cards_data2);
+						$('.eqw-height').html(cards_data1);
+				} else if (!$('.spikers-w').hasClass('slick-initialized') && $(window).width() < 992 ) {
+						//show on mobile when resize
+						$.fn.fullpage.destroy('all');
+
+					collectCards(data1, cards_data1);
+					collectCards(data2, cards_data2);
+					$('.eqw-height').html(cards_data1);
+					$('.spikers-w').slick({
+						dots: true,
+						arrows: true,
+						infinite: true,
+						speed: 300,
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						nextArrow: '<div class="arrow-next">➜</div>',
+						prevArrow: '<div class="arrow-prew">➜</div>',
+						responsive: [
+							{
+								breakpoint: 993,
+								settings: {
+									adaptiveHeight: false,
+									slidesToShow: 2,
+									slidesToScroll: 1
+								}
+							},
+							{
+								breakpoint: 768,
+								settings: {
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}
+						]
+					});
+				}
+
+
+				
+			});
+
+
+		}); //doc readey and
 
 	</script>
 
