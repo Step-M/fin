@@ -1640,6 +1640,12 @@ p.pretitle-form {
   max-width: 100%;
   padding: 0 15px;
 }
+.modal-body.modal-form-body {
+  padding: 15px 25px;
+}
+div#regModal .modal-header {
+  padding: 40px 20px 0;
+}
 }
 
 /*******************************      XS       ***********************/
