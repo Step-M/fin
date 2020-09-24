@@ -1634,6 +1634,9 @@ p.pretitle-form {
 .slider-pic svg{
   display: none;
 }
+.section-9-container{
+  max-width: 100%;
+}
 }
 
 /*******************************      XS       ***********************/
