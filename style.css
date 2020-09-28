@@ -339,9 +339,28 @@ button {
 .eng_pretitle{
   font-size: 24px;
   font-weight: 300;
-  margin: 28px 0 55px;
+  margin: 25px 0 25px;
+}
+.data-of-conf {
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-flex;
+  margin-bottom: 20px;
 }
 
+.data-of-conf span:before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 30px;
+  background: #f6255b;
+  margin: 0 5px 0 10px;
+}
+
+.data-of-conf span {
+  display: inline-flex;
+  align-items: center;
+}
 .timing-w {
   display: flex;
 }

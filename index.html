@@ -72,16 +72,11 @@ end lib styles-->
 								<h1 class="h1_title">NFST 2021</h1>
 								<div class="logoanime">
 									<img src="img/logo-anime.svg" class="sliser" alt="">
-									<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-										width="300px" height="250px">
-										<path fill-rule="evenodd" fill="rgb(246, 37, 90)"
-											d="M117.233,39.943 C-6.773,144.932 -41.942,176.334 58.260,224.910 C158.463,273.485 367.481,252.061 278.426,155.646 C189.370,59.229 241.239,-65.046 117.233,39.943 Z" />
-									</svg> -->
 								</div>
 							</div>
 							<p class="pre-title">научно-образовательная конференция по стандартизации</p>
 							<p class="eng_pretitle">national forum of standards & technology</p>
-
+                            <p class="data-of-conf">11 сентября <span>11:00</span></p>
 							<div class="timing-w">
 								<div class="col-t">
 									<div class="num-t">198</div>
@@ -2111,19 +2106,16 @@ end lib styles-->
 				'wrapAround': true
 			});
 
-$('.mob-menu ul li a').click(function(){
-	event.preventDefault();
-	var mobattr = $(this).attr('href');
+			$('.mob-menu ul li a').click(function(){
+				event.preventDefault();
+				var mobattr = $(this).attr('href');
 
-//узнаем высоту от начала страницы до блока на который ссылаетс€ €корь
-  var top = $(mobattr).offset().top;
-//анимируем переход на рассто€ние - top за 1500 мс
-$('body,html').animate({scrollTop: top}, 1500);
-	$('.menu-w').addClass('d-none');
-});
-			
-
-
+			//узнаем высоту от начала страницы до блока на который ссылаетс€ €корь
+			var top = $(mobattr).offset().top;
+			//анимируем переход на рассто€ние - top за 1500 мс
+			$('body,html').animate({scrollTop: top}, 1500);
+				$('.menu-w').addClass('d-none');
+			});
 
 			$('.slider-pic').slick({
 				rows: 2,
