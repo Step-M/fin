@@ -149,10 +149,10 @@ right: 0;
 .logoanime{
   position: relative;
 }
+/*
 .logoanime img {
   width: 300px;
   height: 250px;
-  transition: all 2s;
   position: absolute;
   bottom: 0;
   -webkit-animation:linear infinite alternate;
@@ -182,18 +182,21 @@ right: 0;
     max-width: 340px;
   }
 }
+*/
 
-img.animate_logo{
+.logoanime img {
+  position: absolute;
+  bottom: 0;
   -webkit-animation:linear infinite alternate;
-  animation-iteration-count: 1;
   -webkit-animation-name: run;
-  -webkit-animation-duration: 1s;
-  transition: all 1s;
+  -webkit-animation-duration: 8s;
+  transition: all 10s;
 }     
 @-webkit-keyframes run {
   0% { 
-    height: 290px;
+    height: 270px;
     width: 250px;
+    max-width: 340px;
   }
   10%{
     width: 320px;
@@ -204,29 +207,33 @@ img.animate_logo{
   }
   30%{
     width: 280px;
+    max-width: 340px;
   }
   40%{
     height: 270px;
   }
   50%{
     width: 300px;
+    max-width: 340px;
   }
   60%{
     height: 230px;
   }
   70%{
     width: 250px;
+    max-width: 340px;
   }
  80%{
   height: 270px;
  }
  90%{
- max-width: 320px;
   width: 320px;
+  max-width: 340px;
  }
   100%{ 
     height: 250px;
-    width: 300px;
+    width: 310px;
+    max-width: 340px;
   }
 }
 
@@ -294,6 +301,16 @@ button {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+a.secondary-btn {
+  width: 163px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a.secondary-btn:hover,  a.primer-btn:hover {
+  text-decoration: underline;
+}
 .header {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -354,7 +371,7 @@ button {
   width: 4px;
   height: 30px;
   background: #f6255b;
-  margin: 0 5px 0 10px;
+  margin: 0 5px 0 8px;
 }
 
 .data-of-conf span {
@@ -939,11 +956,13 @@ p.adress, .tel-foo {
 
 
 
-.section-6-container .slick-wrapper {
+.conf-photos_1  {
   margin-right: 20%;
 }
+
 .conf-photos_2 {
   margin-top: 25px;
+  margin-left: 20%;
 }
  /* 
 .slick-slide>div:nth-child(1) div .slider-img-w {
@@ -1009,6 +1028,11 @@ transform: translateX(-10%);
   top: 50%;
   right: -60px;
   transform: translateY(-50%);
+}
+.pic-prew-ar-w.slick-arrow svg {
+  right: auto;
+  left: -60px;
+  transform: rotate(180deg);
 }
 .price_card {
   margin-left: auto;
@@ -1401,6 +1425,22 @@ img.logo-bgs {
 /*******************************      MD       ***********************/
 
 @media screen and (max-width: 992px){
+  .conf-photos_1  {
+    margin: 0 15px;
+    width: calc(100% - 30px);
+  }
+  
+  .conf-photos_2 {
+    margin: 0 15px;
+    width: calc(100% - 30px);
+    margin-top: 25px;
+  }
+  .section-6-container .slick-arrow svg{
+    display: none;
+  }
+  .slider-pic .arrow-next, .slider-pic .arrow-prew{
+    display: flex!important;
+  }
   .container {
     width: 750px;
 }
@@ -1484,7 +1524,9 @@ footer {
   height: auto;
   margin-bottom: 0;
 }
-
+.conf-photos_1 .conf-photos_2 {
+  margin: 0 10px;
+}
 }
 
 /*******************************      SM       ***********************/
@@ -1642,12 +1684,8 @@ h2.h2_title {
 p.pretitle-form {
   font-size: 12px;
 }
-.section-6-container .slick-wrapper {
-  margin: 0 10px;
-}
-.slider-pic .arrow-next, .slider-pic .arrow-prew{
-  display: flex!important;
-}
+
+
 .arrow-next:hover, .arrow-prew:hover{
 
   background: #f12559;
