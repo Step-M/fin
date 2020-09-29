@@ -432,6 +432,7 @@ h1.h1_title {
 }
 .btn-s1_w {
   margin: 38px 0 20px;
+  display: flex;
 }
 .section_container{
   height: calc(100vh - 90px);
@@ -940,6 +941,10 @@ p.foo-text {
 .icons-foo-w a {
   margin-right: 30px;
 }
+.icons-foo-w a:last-child {
+  margin: 0;
+}
+
 p.adress, .tel-foo {
   margin: 15px 0;
   font-size: 16px;
@@ -1558,7 +1563,7 @@ h1.h1_title {
 .logoanime {
   height: 120px;
 }
-.pre-title, .eng_pretitle{
+.pre-title, .eng_pretitle, .data-of-conf{
   text-align: center;
   font-size: 14px;
 }
