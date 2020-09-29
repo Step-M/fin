@@ -128,11 +128,11 @@ right: 0;
 }
  
 .landing_nav li a{
-  visibility: hidden;
   position: relative;
   text-align: right;
   display: block;
   margin: 10px;
+  color: transparent;
 }
 .landing_nav li a:after {
   content: "";
@@ -140,7 +140,6 @@ right: 0;
   background: white;
   width: 6px;
   height: 23px;
-  visibility: visible;
   cursor: pointer;
   right: -10px;
   position: absolute;
@@ -247,11 +246,13 @@ right: 0;
 .landing_nav li.active a:after,  .landing_nav li:hover a:after{
   background: #f6255b;
   transition: all 0.3s;
+  color: white;
 }
 .landing_nav li:hover a, .landing_nav li.active a {
   visibility: visible;
   color: white;
   text-decoration: none;
+  color: white;
 }
 button {
     background: none;
@@ -860,12 +861,12 @@ a.collapsed .plus:after {
 }
 .inner-logos {
   width: calc(20% - 20px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 20px 10px;
 }
-
+.inner-logos img{
+  display: block;
+  margin: 0 auto;
+}
 
 footer {
   background: black;
@@ -878,6 +879,12 @@ footer {
 .icons-foo-w svg {
   fill: white;
   height: 25px;
+}
+.icons-foo-w{
+  display: flex;
+}
+.icons-foo-w a{
+  max-width: 50px;
 }
 .bottom-foo-line {
   text-align: center;
@@ -1038,6 +1045,7 @@ transform: translateX(-10%);
   right: auto;
   left: -60px;
   transform: rotate(180deg);
+  top: auto;
 }
 .price_card {
   margin-left: auto;
@@ -1259,6 +1267,11 @@ p.confi:before {
   font-weight: 500;
 }
 
+/* after check on IE*/
+#mobGallery {
+    overflow: hidden;
+}
+
 /*******************************      MEDIA       ***********************/
 
 /*******************************      LG       ***********************/
@@ -1418,6 +1431,7 @@ img.logo-bgs {
   flex-direction: column;
   justify-content: space-around;
   padding-bottom: 160px;
+  overflow: hidden;
 }
 
 .section-10-container.container .panel-group {  
