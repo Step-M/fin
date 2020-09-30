@@ -2322,8 +2322,7 @@ if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) 
 	$('#navigation li a').click(function(){
 		event.preventDefault();
 		var attrIe = $(this).attr('href').slice(1);
-		alert(attrIe);
-		var top = $(attrIe).offset().top;
+		var top = $("[data-anchor="+attrIe+"]").offset().top;
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
 }
