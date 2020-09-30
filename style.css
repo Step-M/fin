@@ -188,17 +188,17 @@ right: 0;
   bottom: 0;
   -webkit-animation:linear infinite alternate;
   -webkit-animation-name: run;
-  -webkit-animation-duration: 8s;
+  -webkit-animation-duration: 10s;
   transition: all 10s;
 }     
 @-webkit-keyframes run {
   0% { 
-    height: 270px;
-    width: 250px;
+    height: 260px;
+    width: 240px;
     max-width: 340px;
   }
   10%{
-    width: 320px;
+    width: 300px;
     max-width: 320px;
   }
   20%{
@@ -209,7 +209,7 @@ right: 0;
     max-width: 340px;
   }
   40%{
-    height: 270px;
+    height: 250px;
   }
   50%{
     width: 300px;
@@ -219,14 +219,14 @@ right: 0;
     height: 230px;
   }
   70%{
-    width: 250px;
+    width: 260px;
     max-width: 340px;
   }
  80%{
-  height: 270px;
+  height: 260px;
  }
  90%{
-  width: 320px;
+  width: 300px;
   max-width: 340px;
  }
   100%{ 
@@ -363,6 +363,7 @@ a.secondary-btn:hover,  a.primer-btn:hover {
   font-weight: 600;
   font-size: 20px;
   display: inline-flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -1580,6 +1581,13 @@ h1.h1_title {
 .pre-title, .eng_pretitle, .data-of-conf{
   text-align: center;
   font-size: 14px;
+}
+.data-of-conf{
+  margin: auto;
+  margin-bottom: 20px;
+}
+.icons-foo-w {
+  justify-content: center;
 }
 .pre-title{
   font-weight: 600;

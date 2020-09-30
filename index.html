@@ -71,7 +71,7 @@ end lib styles-->
 							<div class="logo-container">
 								<h1 class="h1_title">NFST 2021</h1>
 								<div class="logoanime">
-									<img src="img/logo-anime.svg" class="sliser" alt="">
+									<img src="img/logo-anime.png" class="sliser" alt="">
 								</div>
 							</div>
 							<p class="pre-title">научно-образовательная конференция по стандартизации</p>
@@ -800,7 +800,7 @@ end lib styles-->
 						<div class="col-xs-12">
 							<div class="logo-5-w">
 								<div class="lay-logo-bottom">
-									<img class="logo-bgs" src="img/logo-svg2.svg" alt="svg2">
+									<img class="logo-bgs" src="img/logo-svg2.png" alt="svg2">
 									<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 										width="292px" height="260px">
 										<path fill-rule="evenodd" fill="rgb(246, 37, 90)"
@@ -2319,14 +2319,12 @@ end lib styles-->
 
 if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent)) {
 	$.fn.fullpage.destroy('all');
-	
-
-	$('#navigation a').click(function(){
-				event.preventDefault();
-				var mobattr = $(this).attr('href');
-                var top = $(mobattr).offset().top;
-                $('body,html').animate({scrollTop: top}, 1500);
-			});
+	$('#navigation li a').click(function(){
+		event.preventDefault();
+		var attrIe = $(this).attr('href');
+		var top = $(attrIe).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
 }
 
 		}); //doc readey and
