@@ -2311,21 +2311,15 @@ end lib styles-->
 					});
 				}
 			});
-
-
-
-
-
-
-if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent)) {
-	$.fn.fullpage.destroy('all');
-	$('#navigation li a').click(function(){
-		event.preventDefault();
-		var attrIe = $(this).attr('href').slice(1);
-		var top = $("[data-anchor="+attrIe+"]").offset().top;
-		$('body,html').animate({scrollTop: top}, 1500);
-	});
-}
+			if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent)) {
+				$.fn.fullpage.destroy('all');
+				$('#navigation li a').click(function(){
+					event.preventDefault();
+					var attrIe = $(this).attr('href').slice(1);
+					var top2 = $("[data-anchor="+attrIe+"]").offset().top;
+					$('body,html').animate({scrollTop: top2}, 1500);
+				});
+			}
 
 		}); //doc readey and
 
